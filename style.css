@@ -1,6 +1,7 @@
 header {
     background: rgba(0,0,0,0.7);
-    width: 40%;
+    width: 30%;
+    height: 50px;
     position:fixed;
     z-index: 100;
     top: 0px;
@@ -19,7 +20,7 @@ header {
   nav ul li {
     float: left;
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
   }
   nav ul li a {
     display: block;
@@ -28,7 +29,7 @@ header {
     text-decoration: none;
   }
   nav ul li:hover {
-    background: #eca023;
+    background: #23bdec;
   }
 
   .container {
