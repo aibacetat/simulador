@@ -1,39 +1,3 @@
-// Variables
-const baseDeDatos = [
-    {
-        id: 1,
-        nombre: 'Papas',
-        precio: 1,
-        imagen: 'papas.jpg'
-    },
-    {
-        id: 2,
-        nombre: 'Cebollas',
-        precio: 1000,
-        imagen: 'cebollas.jpg'
-    },
-    {
-        id: 3,
-        nombre: 'manzanas',
-        precio: 900,
-        imagen: 'manzanas.jpg'
-    },
-    {
-        id: 4,
-        nombre: 'Frutillas',
-        precio: 2600,
-        imagen: 'frutillas.jpg'
-    }
-
-];
-
-let carrito = [];
-const divisa = '$';
-const DOMitems = document.querySelector('#items');
-const DOMcarrito = document.querySelector('#carrito');
-const DOMtotal = document.querySelector('#total');
-const DOMbotonVaciar = document.querySelector('#boton-vaciar');
-
 // Funciones
 
 /**
@@ -92,7 +56,7 @@ function anyadirProductoAlCarrito(evento) {
 function renderizarCarrito() {
     // Vaciamos todo el html
     DOMcarrito.textContent = '';
-    // Quitamos los duplicados
+    // Quitamos los duplicadosDOMbotonVaciar
     const carritoSinDuplicados = [...new Set(carrito)];
     // Generamos los Nodos a partir de carrito
     carritoSinDuplicados.forEach((item) => {
@@ -151,7 +115,7 @@ function calcularTotal() {
         });
         // Los sumamos al total
         return total + miItem[0].precio;
-    }, 0).toFixed(2);
+    }, 0).toFixed(0);
 }
 
 /**
@@ -164,8 +128,26 @@ function vaciarCarrito() {
     renderizarCarrito();
 }
 
+function modal_01() {
+    Swal.fire({
+      html:'Felicidades ya está Lista tú Compra!, Te avisaremos por mail la confirmación de tú orden de despacho.',
+      confirmButtonText:'¡Aceptar!',
+      toast:true,
+      icon:'success',
+      padding:'1rem',
+      position:'top-right',
+      showCloseButton:true,
+      timer:'6000',
+      timerProgressBar:true, 
+      customClass:{
+      actions:'content'
+      }
+    })
+   
+  }
+
 // Eventos
-DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+DOMbotonVaciar.addEventListener('click', vaciarCarrito, Swal);
 
 // Inicio
 renderizarProductos();
