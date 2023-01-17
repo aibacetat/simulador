@@ -11,7 +11,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  margin: 0;
+  margin: 0px;
 }
 
 #contenedor, #contenedorTabla {
@@ -21,7 +21,7 @@ body {
   overflow: hidden;
   width: 400px;
   max-width: 100%;
-  margin: 20px;
+  margin: 60px;
 }
 
 #contenedorTabla {
@@ -66,7 +66,7 @@ body {
 #frmPrestamo .control, #amortizaciones .control, .radios {
   margin-bottom: 10px;
   padding-bottom: 20px;
-  position: relative;
+  position:relative;
 }
 
 #frmPrestamo .control label {
