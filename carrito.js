@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: 8,
-            nombre: 'Alcachofa',
-            precio: 2000,
+            nombre: 'Alcachofas',
+            precio: 1500,
             imagen: './img/alcachofas.jpg'
         },
         {

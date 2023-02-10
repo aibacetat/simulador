@@ -7,6 +7,12 @@ header {
     top: 0px;
     left: 0px;
   }
+
+  body{
+    background: linear-gradient(90deg,#f6f4f4,#5e92a9) fixed;
+    padding:50px;
+    font-weight: 400;
+}
   
   nav {
     float: left;
@@ -38,4 +44,13 @@ header {
     display:grid;
     float: center;
     padding: 10px;
+  }
+
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.5rem;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
   }
