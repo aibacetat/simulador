@@ -68,7 +68,7 @@ body{
   background-image: url(./img/clima.png);
 }
 .card:hover{
-    background: #e84393;
+    background: #e86966;
     color: #fff;
     box-shadow: 0px 0px 11px 5px #000000;
 
