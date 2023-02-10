@@ -29,7 +29,8 @@ header {
     text-decoration: none;
   }
   nav ul li:hover {
-    background: #23bdec;
+    background: #8ec1e9;
+    border-radius: 4px;
   }
 
 body {
